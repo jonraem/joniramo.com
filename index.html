@@ -5,7 +5,7 @@
         <!-- Metadata -->
         <meta name="author" content="Joni Rämö">
         <meta name="description" content="Hello! My name is Joni Rämö. I am a developer based in Turku, Finland.">
-        <meta name="keywords" content="HTML, CSS, JavaScript, developer">
+        <meta name="keywords" content="HTML, CSS, JavaScript, web, developer">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <!-- Linked content -->
@@ -31,6 +31,7 @@
             <h1>Joni Rämö</h1>
             <p id="subtitle">Let's develop something together.</p>
         </header>
+        
         <!-- Icons -->
 		<div id="icons">
             <ul class="grid">
@@ -40,14 +41,18 @@
                 <li class="icon"><a href="mailto:joni@joniramo.com"><i class="fa fa-envelope fa-5x"></i></a></li>
             </ul>
 		</div>
+        
         <!-- Introduction -->
         <div id="intro">
-            <p></p>
+            <p>Hi! My name is Joni and I'm a developer. My passion lies in the web and especially in front end technologies. You can find various ways to contact me from the icons above. Don't hesitate to say hello!</p>
         </div>
+        
         <!-- Footer -->
         <footer>
             <p>© Joni Rämö 2016 | <a href="http://joniramo.com">joniramo.com</a></p>
         </footer>
+        
+        <!-- jQuery -->
         <script>
             $(document).ready(function() {
                 var elems = document.getElementsByClassName("icon");
@@ -56,6 +61,7 @@
                     $(this).delay(700*index).css("opacity","0").animate({opacity:"1"}, 800);
                 });
                 $("#subtitle").delay(2800).css("opacity", "0").animate({opacity:"1"}, 800);
+                $("#intro").delay(3600).css("opacity", "0").animate({opacity:"1"}, 800);
             });
         </script>
 	</body>
